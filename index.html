@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libertinus+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE YALLIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="nav-bar reveal">
+                <p><a href="#quem">QUEM SOMOS</a></p>
+                <p><a href="#missao">NOSSA MISSÃO</a></p>
+                <p><a href="#casa">NOSSA CASA</a></p>
+                <p><a href="#depoimentos">DEPOIMENTOS</a></p>
+                <p><a href="#faq">PERGUNTAS FREQUÊNTES</a></p>
+            </div>
+
+            <!-- Ícone de menu / X -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Menu lateral -->
+        <div class="menu-lateral" id="menuLateral">
+           <a href="#quem">QUEM SOMOS</a>
+                <a href="#missao">NOSSA MISSÃO</a>
+                <a href="#casa">NOSSA CASA</a>
+                <a href="#depoimentos">DEPOIMENTOS</a>
+                <a href="#faq">PERGUNTAS FREQUÊNTES</a>
+        </div>
+
+        <div class="logo ">
+            <img src="./img/logo.png" alt="Logo YALLIS">
+        </div>
+
+        <div class="seta-img">
+            <img class="seta-img" src="./img/seta-para-baixo.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <section class="section-um" id="quem">
+            <div class="container-section-um">
+                <div class="imagem">
+                    <img src="./img/foto.png" alt="Studio Yallis">
+                </div>
+
+                <div class="texto reveal">
+
+                    <h1>Quem somos</h1>
+                    <h2>há 12 anos construindo resultados</h2>
+
+                    <p>O Studio Yallis é um espaço dedicado ao movimento consciente e ao bem-estar integral.</p>
+
+                    <p>Mais do que um estúdio de Pilates, somos uma experiência contemporânea que une ciência, técnica e
+                        sensibilidade para transformar o exercício em um momento de prazer, presença e equilíbrio.</p>
+
+                    <p>Nosso propósito é promover vitalidade, leveza e longevidade, por meio de uma metodologia própria
+                        que respeita o ritmo e as necessidades de cada pessoa.</p>
+
+                    <p>Cada aula é cuidadosamente planejada para gerar resultados consistentes, fortalecendo corpo e
+                        mente de forma inteligente, segura e eficiente.</p>
+
+                    <p>Com uma equipe formada por fisioterapeutas e profissionais de educação física especializados,
+                        criamos um ambiente acolhedor e humano, onde o cuidado vai além do físico e se estende à
+                        experiência do encontro consigo.</p>
+
+                    <p>No Yallis, cada conquista é celebrada e cada evolução é reconhecida como parte de um caminho
+                        contínuo para a longevidade, com potência e qualidade de vida.</p>
+
+                    <div class="central">
+                        <p class="assinatura"><strong>Thalita Medina</strong></p>
+                        <p><strong>Fisioterapeuta e fundadora do Studio Yallis</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="missao-section"  id="missao">
+            <div class="missao-header reveal">
+                <h1>Nossa missão</h1>
+            </div>
+
+            <div class="missao-texto reveal">
+                <p>
+                    Nossa missão é promover o movimento consciente como caminho para o equilíbrio físico e mental.
+                    Buscamos fortalecer o corpo de forma inteligente e segura, respeitando os limites e o ritmo de cada
+                    pessoa.
+                    No Studio Yallis, acreditamos que o Pilates vai além do exercício — é uma prática que desperta
+                    consciência,
+                    melhora a postura, reduz dores e devolve vitalidade e leveza ao dia a dia.
+                </p>
+            </div>
+
+        </section>
+
+
+
+        <section class="nossa-casa "  id="casa">
+            <div class="nossa-casa-content reveal">
+
+                <div class="nossa-casa-imagem">
+                    <img src="./img/casa.png" alt="Foto do estúdio">
+                </div>
+
+                <div class="nossa-casa-">
+                    <h2>Nossa casa</h2>
+                    <p>
+                        Um espaço pensado para te acolher com conforto, elegância
+                        e atmosfera sensorial.
+                    </p>
+                    <p>
+                        O Studio Yallis foi projetado para inspirar leveza e bem-estar,
+                        valorizando cada experiência.
+                    </p>
+                    <a href="https://wa.me/5524993084414" class="btn-visite">Agende sua visita</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- JS para mover o título no mobile -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                if (window.innerWidth <= 900) {
+                    const content = document.querySelector(".nossa-casa-content");
+                    const texto = document.querySelector(".nossa-casa-");
+                    const titulo = texto.querySelector("h2");
+
+                    if (titulo) {
+                        // move o h2 para o topo da section
+                        content.insertBefore(titulo, content.firstChild);
+                    }
+                }
+            });
+        </script>
+
+
+        <section class="depoimentos" id="depoimentos">
+            <h2 class="depoi reveal">Depoimentos</h2>
+
+            <div class="slider reveal">
+                <div class="slide active">
+                    <div class="card-depoimento">
+                        <p>"O Studio Yallis transformou totalmente minha experiência com Pilates.
+                            Ambiente perfeito e atendimento impecável!"</p>
+                        <div class="stars-svg">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="card-depoimento">
+                        <p>"Profissionais extremamente qualificados e um espaço lindo.
+                            Me sinto renovada a cada sessão."</p>
+                        <div class="stars-svg">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="card-depoimento">
+                        <p>"Melhor estúdio que já frequentei. A estética, a energia e o cuidado fazem toda diferença."
+                        </p>
+                        <div class="stars-svg">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="controles">
+                <span class="seta prev">‹</span>
+                <span class="seta next">›</span>
+            </div>
+        </section>
+
+        <script>
+            let index = 0;
+            const slides = document.querySelectorAll(".slide");
+
+            function showSlide(i) {
+                slides.forEach((s) => s.classList.remove("active"));
+                slides[i].classList.add("active");
+            }
+
+            document.querySelector(".next").addEventListener("click", () => {
+                index = (index + 1) % slides.length;
+                showSlide(index);
+            });
+
+            document.querySelector(".prev").addEventListener("click", () => {
+                index = (index - 1 + slides.length) % slides.length;
+                showSlide(index);
+            });
+
+            // Passa sozinho a cada 5s
+            setInterval(() => {
+                index = (index + 1) % slides.length;
+                showSlide(index);
+            }, 5000);
+        </script>
+
+
+        <section class="faq-section " id="faq">
+            <h2 class="reveal">Perguntas Frequentes</h2>
+
+            <div class="faq-item ">
+                <button class="faq-question reveal">
+                    Como funcionam as aulas no Studio Yallis?
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Nossas aulas são totalmente personalizadas, focadas no seu objetivo e no seu ritmo.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question reveal">
+                    Preciso ter experiência para começar?
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Não! Qualquer pessoa pode começar, mesmo do zero. Nós te guiamos com segurança.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question reveal">
+                    Posso fazer uma aula experimental?
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim, oferecemos aula experimental mediante agendamento.</p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const faqItems = document.querySelectorAll(".faq-item");
+
+            faqItems.forEach(item => {
+                item.querySelector(".faq-question").addEventListener("click", () => {
+                    item.classList.toggle("active");
+                });
+            });
+        </script>
+
+
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Agora a LOGO vem primeiro (ESQUERDA) -->
+                <div class="footer-right">
+                    <img src="./img/logo.png" alt="Logo do Studio" class="footer-logo">
+                </div>
+
+                <!-- Depois: Informações + Ícones (DIREITA) -->
+                <div class="footer-left">
+                    <div class="footer-info">
+                        <p>📍 Rua [Nome da Rua], nº [000] – [Bairro], [Cidade/UF]</p>
+                        <p>☎️ (24) 12345-6789</p>
+                        <p>✉️ yallis@gmail.com</p>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/NOME_DA_PAGINA"><img
+                                src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="facebook"></a>
+                        <a href="https://wa.me/5524993084414"><img
+                                src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="whatsapp"></a>
+                        <a href="https://www.instagram.com/NOME_DO_PERFIL"><img
+                                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="footer-copy"><strong>© 2025 StudioYallis — Todos os direitos reservados.</strong></p>
+        </footer>
+
+
+    </main>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menuLateral = document.getElementById('menuLateral');
+        const menuLinks = document.querySelectorAll('.menu-lateral a');
+
+        function toggleMenu() {
+            const opened = menuLateral.classList.toggle('active');
+            if (opened) {
+                hamburger.classList.add('fixed');
+                document.body.classList.add('menu-open');
+            } else {
+                hamburger.classList.remove('fixed');
+                document.body.classList.remove('menu-open');
+            }
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+
+        // fecha menu ao clicar em qualquer link
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuLateral.classList.remove('active');
+                hamburger.classList.remove('fixed');
+                document.body.classList.remove('menu-open');
+            });
+        });
+
+    </script>
+
+    <script>
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll(".reveal");
+
+            reveals.forEach((el) => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 100; // quanto antes começa a aparecer
+
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll(); // garante que elementos já visíveis animem
+    </script>
+
+    <a href="https://wa.me/5524993084414" class="whatsapp-float" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+    </a>
+
+</body>
+
+</html>
