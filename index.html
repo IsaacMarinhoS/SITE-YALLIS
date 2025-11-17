@@ -60,53 +60,47 @@
     </header>
 
     <main>
-        <section class="section-um" id="quem">
-            <div class="container-section-um">
-                <div class="imagem">
+        <section class="quem-somos" id="quem">
+            <div class="qs-container">
+
+                <div class="qs-imagem">
                     <img src="./img/foto.png" alt="Studio Yallis">
                 </div>
 
-                <div class="texto reveal">
+                <div class="qs-texto">
 
-                    <h1>Quem somos</h1>
-                    <h2>há 12 anos construindo resultados</h2>
+                    <span class="qs-tag"><strong>Quem somos </strong></span>
+                    <h2>Há 12 anos construindo resultados</h2>
 
-                    <p>O Studio Yallis é um espaço dedicado ao movimento consciente e ao bem-estar integral.</p>
+                    <p class="texto-principal">
+                        “O Studio Yallis é mais que um estúdio de Pilates: é um espaço de cuidado,
+                        movimento consciente e bem-estar. Atendemos desde quem busca alívio para dores
+                        até pessoas saudáveis que desejarem se fortalecer com prazer e delicadeza,
+                        promovendo liberdade, vitalidade e a sensação de estar em plena harmonia
+                        com o próprio corpo”.
+                    </p>
 
-                    <p>Mais do que um estúdio de Pilates, somos uma experiência contemporânea que une ciência, técnica e
-                        sensibilidade para transformar o exercício em um momento de prazer, presença e equilíbrio.</p>
-
-                    <p>Nosso propósito é promover vitalidade, leveza e longevidade, por meio de uma metodologia própria
-                        que respeita o ritmo e as necessidades de cada pessoa.</p>
-
-                    <p>Cada aula é cuidadosamente planejada para gerar resultados consistentes, fortalecendo corpo e
-                        mente de forma inteligente, segura e eficiente.</p>
-
-                    <p>Com uma equipe formada por fisioterapeutas e profissionais de educação física especializados,
-                        criamos um ambiente acolhedor e humano, onde o cuidado vai além do físico e se estende à
-                        experiência do encontro consigo.</p>
-
-                    <p>No Yallis, cada conquista é celebrada e cada evolução é reconhecida como parte de um caminho
-                        contínuo para a longevidade, com potência e qualidade de vida.</p>
-
-                    <div class="central">
-                        <p class="assinatura"><strong>Thalita Medina</strong></p>
-                        <p><strong>Fisioterapeuta e fundadora do Studio Yallis</strong></p>
+                    <div class="qs-assinatura">
+                        <p class="nome">Thalita Medina</p>
+                        <p class="cargo">Fisioterapeuta e fundadora</p>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="missao-section" id="missao">
-            <div class="missao-header reveal">
-                <h1>Nossa missão</h1>
-            </div>
+        <section class="missao-clean" id="missao">
 
-            <div class="missao-texto reveal">
+            <h2 class="titulo-missao">Nossa missão</h2>
+
+            <div class="texto-missao">
                 <p>
                     Nossa missão é promover o movimento consciente como caminho para o equilíbrio físico e mental.
                     Buscamos fortalecer o corpo de forma inteligente e segura, respeitando os limites e o ritmo de cada
                     pessoa.
+                </p>
+
+                <p>
                     No Studio Yallis, acreditamos que o Pilates vai além do exercício — é uma prática que desperta
                     consciência,
                     melhora a postura, reduz dores e devolve vitalidade e leveza ao dia a dia.
@@ -117,11 +111,28 @@
 
 
 
-        <section class="nossa-casa " id="casa">
+
+
+        <section class="nossa-casa" id="casa">
             <div class="nossa-casa-content reveal">
 
                 <div class="nossa-casa-imagem">
-                    <img src="./img/casa.png" alt="Foto do estúdio">
+                    <div class="carousel-nossa-casa">
+                        <div class="carousel-track">
+                            <div class="carousel-item">
+                                <img src="./img/4.png" alt="Foto do estúdio 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/5.png" alt="Foto do estúdio 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/6.png" alt="Foto do estúdio 3">
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn prev-casa">‹</button>
+                        <button class="carousel-btn next-casa">›</button>
+                    </div>
                 </div>
 
                 <div class="nossa-casa-">
@@ -140,6 +151,8 @@
             </div>
         </section>
 
+
+
         <!-- JS para mover o título no mobile -->
         <script>
             document.addEventListener("DOMContentLoaded", () => {
@@ -154,7 +167,72 @@
                     }
                 }
             });
+
+
+            const trackCasa = document.querySelector(".carousel-track");
+            const prevCasaBtn = document.querySelector(".prev-casa");
+            const nextCasaBtn = document.querySelector(".next-casa");
+
+            let casaIndex = 0;
+            const casaSlides = document.querySelectorAll(".carousel-item");
+            const casaTotal = casaSlides.length;
+
+            function updateCarouselCasa() {
+                trackCasa.style.transform = `translateX(-${casaIndex * 100}%)`;
+            }
+
+            nextCasaBtn.addEventListener("click", () => {
+                casaIndex = (casaIndex + 1) % casaTotal;
+                updateCarouselCasa();
+            });
+
+            prevCasaBtn.addEventListener("click", () => {
+                casaIndex = (casaIndex - 1 + casaTotal) % casaTotal;
+                updateCarouselCasa();
+            });
+
+            // Auto-play opcional (se não quiser, pode apagar isso)
+            setInterval(() => {
+                casaIndex = (casaIndex + 1) % casaTotal;
+                updateCarouselCasa();
+            }, 3000);
+
+
         </script>
+
+
+
+<section class="estrutura" id="estrutura">
+    <h2 class="titulo-estrutura">Nossa Estrutura</h2>
+
+    <div class="estrutura-icones">
+        
+        <div class="icone-item">
+            <img src="icone/ar-condicionado.png" alt="">
+            <p>Ar-condicionado</p>
+        </div>
+
+        <div class="icone-item">
+            <img src="icone/Cópia_de_Cópia_de_Identidade_Visual_Yallis_-_IG__Site___1_-removebg-preview.png" alt="">
+            <p>Exclusividade</p>
+        </div>
+
+        <div class="icone-item">
+            <img src="icone/Cópia_de_Cópia_de_Identidade_Visual_Yallis_-_IG__Site___2_-removebg-preview.png" alt="">
+            <p>Fisioterapia</p>
+        </div>
+
+        <div class="icone-item">
+            <img src="icone/estacionamento.png" alt="">
+            <p>Estacionamento</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
 
 
         <section class="depoimentos" id="depoimentos">
@@ -366,7 +444,7 @@
     </script>
 
     <a href="https://wa.me/5524993084414" class="whatsapp-float" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+        <img src="./img/whatsapp.png" alt="WhatsApp">
     </a>
 
 </body>
