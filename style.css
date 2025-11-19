@@ -241,7 +241,7 @@ a:hover {
 /* === NOVA SEÇÃO QUEM SOMOS === */
 
 .quem-somos {
-    background: #d8c199;
+    background: #f0e5d1;
     padding: 100px 8%;
     
     font-family: "Montserrat", sans-serif;
@@ -304,7 +304,7 @@ a:hover {
 }
 
 .qs-assinatura .nome {
-    font-family: "Caveat", cursive;
+    font-family: "Great Vibes", cursive;
     font-size: 32px;
     margin-bottom: -5px;
     color: #000;
@@ -577,7 +577,7 @@ a:hover {
 
 
 .nossa-casa {
-    background-color: #d8c199;
+    background-color: #f0e5d1;
     padding: 80px 8%;
     display: flex;
     justify-content: center;
@@ -629,6 +629,8 @@ a:hover {
 
 /* BOTÃO */
 .btn-visite {
+  
+    font-family: "Lato", sans-serif;
     display: inline-block;
     margin-top: 20px;
     background: #000;
@@ -960,7 +962,7 @@ a:hover {
 
 /* === SEÇÃO DEPOIMENTOS === */
 .depoimentos {
-    background-color: rgb(216, 193, 153);
+    background-color: #f0e5d1;
     padding: 100px 8%;
     text-align: center;
 
@@ -1024,7 +1026,7 @@ a:hover {
     backdrop-filter: blur(8px);
     padding: 35px 40px;
     border-radius: 22px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
     color: #333;
     font-size: 1.1rem;
     line-height: 1.7;
@@ -1317,7 +1319,7 @@ a:hover {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: #d8c199;
+    background: #f0e5d1;
     padding: 40px 20px 20px;
     width: 100%;
 
