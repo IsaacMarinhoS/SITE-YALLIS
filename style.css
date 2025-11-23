@@ -304,10 +304,11 @@ a:hover {
 }
 
 .qs-assinatura .nome {
-    font-family: "Great Vibes", cursive;
+    font-family: "Mrs Saint Delafield", cursive;
     font-size: 32px;
     margin-bottom: -5px;
     color: #000;
+    font-weight: 500;
 }
 
 .qs-assinatura .cargo {
@@ -960,9 +961,135 @@ a:hover {
 
 
 
+
+
+
+
+/* SEÇÃO */
+.beneficios {
+    background-color: #f0e5d1;
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* TÍTULO */
+.titulo-beneficios {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo-beneficios::after {
+    content: "";
+    height: 3px;
+    width: 60%;
+    background: #2d2d2d;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* ÁREA DO LOOP */
+.beneficios-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* LINHA QUE ANDA */
+.beneficios-loop {
+    display: flex;
+    gap: 40px;
+    animation: slideLoop 18s linear infinite;
+}
+
+/* ANIMAÇÃO */
+@keyframes slideLoop {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* CARD PREMIUM */
+.beneficio-card {
+    background: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+
+
+/* TÍTULO DO CARD */
+.beneficio-card h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+
+/* TEXTO DO CARD */
+.beneficio-card p {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 1114px) {
+
+    .titulo-beneficios {
+        font-size: 38px;
+    }
+
+    
+
+}
+
+
+@media (max-width: 768px) {
+
+    .titulo-beneficios {
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+
+    .titulo-beneficios {
+        font-size: 26px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* === SEÇÃO DEPOIMENTOS === */
 .depoimentos {
-    background-color: #f0e5d1;
+    background-color:   #bead91;
     padding: 100px 8%;
     text-align: center;
 
@@ -1104,7 +1231,7 @@ a:hover {
 
     .depoimentos {
 
-        padding: 30px 8%;
+        padding: 80px 8%;
 
 
     }
@@ -1125,7 +1252,7 @@ a:hover {
 
     .depoimentos {
 
-        padding: 30px 8%;
+        padding: 80px 8%;
 
 
     }
@@ -1146,7 +1273,7 @@ a:hover {
 
     .depoimentos {
 
-        padding: 30px 8%;
+        padding: 80px 8%;
 
 
     }
@@ -1167,7 +1294,7 @@ a:hover {
 
 /* ===== FAQ ===== */
 .faq-section {
-    background: #bead91;
+    background: #f0e5d1;
     /* ajuste se quiser outra cor */
     padding: 80px 8%;
 
@@ -1319,7 +1446,7 @@ a:hover {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: #f0e5d1;
+    background: #bead91;
     padding: 40px 20px 20px;
     width: 100%;
 
@@ -1456,7 +1583,7 @@ a:hover {
 
 /* ÍCONE */
 .whatsapp-float img {
-    width: 29px;
+    width: 40px;
 }
 
 /* ANIMAÇÃO DE SUBIR E DESCER */

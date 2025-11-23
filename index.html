@@ -24,7 +24,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+
+
 </head>
+
+
 
 <body>
     <header>
@@ -223,7 +231,7 @@
 
         <div class="icone-item">
             <img src="icone/Cópia_de_Cópia_de_Identidade_Visual_Yallis_-_IG__Site___2_-removebg-preview.png" alt="">
-            <p>Fisioterapia</p>
+            <p>Fisioterapeutas</p>
         </div>
 
         <div class="icone-item">
@@ -233,6 +241,80 @@
 
     </div>
 </section>
+
+
+
+<section class="beneficios">
+    <h2 class="titulo-beneficios">Benefícios</h2>
+
+    <div class="beneficios-wrapper">
+        <div class="beneficios-loop">
+
+            <div class="beneficio-card">
+                <h3>Bem-estar</h3>
+                <p>Atividades que aliviam tensões e aumentam a leveza corporal.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <h3>Exclusividade</h3>
+                <p>Atendimento premium, pensado nos mínimos detalhes.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <h3>Conforto</h3>
+                <p>Ambiente climatizado e totalmente estruturado.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <h3>Resultados</h3>
+                <p>Treinos eficientes focados no seu objetivo.</p>
+            </div>
+
+            <!-- Duplicado para looping infinito -->
+            <div class="beneficio-card">
+                <h3>Bem-estar</h3>
+                <p>Atividades que aliviam tensões e aumentam a leveza corporal.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <h3>Exclusividade</h3>
+                <p>Atendimento premium, pensado nos mínimos detalhes.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <h3>Conforto</h3>
+                <p>Ambiente climatizado e totalmente estruturado.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <h3>Resultados</h3>
+                <p>Treinos eficientes focados no seu objetivo.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+  const slider = document.querySelector('.beneficios-slider');
+
+  setInterval(() => {
+    slider.scrollBy({
+      left: 280,
+      behavior: 'smooth'
+    });
+
+    // volta pro começo quando chega no fim
+    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 10) {
+      slider.scrollTo({ left: 0, behavior: "smooth" });
+    }
+
+  }, 3000); // a cada 3 segundos
+</script>
+
+
 
 
 
