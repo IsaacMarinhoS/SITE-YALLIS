@@ -1362,7 +1362,7 @@ a:hover {
 
 /* Quando abre */
 .faq-item.active .faq-answer {
-    max-height: 300px;
+    max-height: 10000px;
 }
 
 .faq-item.active .arrow {
