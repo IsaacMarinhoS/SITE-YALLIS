@@ -1005,7 +1005,7 @@ a:hover {
 .beneficios-loop {
     display: flex;
     gap: 40px;
-    animation: slideLoop 18s linear infinite;
+    animation: slideLoop 10s linear infinite;
 }
 
 /* ANIMAÇÃO */
