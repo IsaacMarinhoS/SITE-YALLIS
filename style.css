@@ -513,8 +513,21 @@ a:hover {
 
 
 .nossa-casa-imagem {
-    flex: 2;
+    width: 100%;
+    max-width: 600px; /* ajuste se quiser maior */
+    aspect-ratio: 16 / 9; /* força formato YouTube */
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
 }
+
+.video-nossa-casa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* corta o topo e o fundo */
+}
+
+
 
 /* CONTÊINER DO CARROSSEL – ocupa o mesmo espaço da imagem antiga */
 .carousel-nossa-casa {
