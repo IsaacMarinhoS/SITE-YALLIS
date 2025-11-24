@@ -504,6 +504,14 @@ a:hover {
 /* === SEÇÃO NOSSA CASA === */
 
 /* FOTO GRANDE */
+
+.nossa-casa {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 .nossa-casa-imagem {
     flex: 2;
 }
@@ -680,6 +688,38 @@ a:hover {
 
 
 
+
+
+
+.loop-cards-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.loop-cards-track {
+    display: flex;
+    gap: 15px;
+    width: calc(120px * 12);
+    animation: scrollLoop 18s linear infinite;
+}
+
+.loop-card {
+    margin-top: 30px;
+    width: 220px;
+    
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes scrollLoop {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+
+
 /* RESPONSIVO */
 
 
@@ -742,6 +782,14 @@ a:hover {
 
 /* 768px */
 @media (max-width: 768px) {
+
+    .loop-card {
+    margin-top: 30px;
+    width: 160px;
+    
+    object-fit: cover;
+    border-radius: 10px;
+}
    
 
     .nossa-casa h2 {
@@ -801,6 +849,10 @@ a:hover {
         font-size: 13px;
     }
 }
+
+
+
+
 
 
 /* === SEÇÃO ESTRUTURA === */
