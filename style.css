@@ -720,7 +720,7 @@ a:hover {
 .loop-card {
     margin-top: 30px;
     width: 220px;
-    
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
 }
